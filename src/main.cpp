@@ -8,6 +8,20 @@
 /*----------------------------------------------------------------------------*/
 
 // ---- START VEXCODE CONFIGURED DEVICES ----
+// Robot Configuration:
+// [Name]               [Type]        [Port(s)]
+// Controller1          controller                    
+// FLdrive              motor         1               
+// FRdrive              motor         2               
+// BLdrive              motor         3               
+// BRdrive              motor         4               
+// FlywheelL            motor         5               
+// FlywheelR            motor         6               
+// IntakeL              motor         7               
+// IntakeR              motor         8               
+// Vision               vision        20              
+// Flywheel             encoder       A, B            
+// IntakeUltrasonic     sonar         C, D            
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
