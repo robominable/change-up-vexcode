@@ -31,5 +31,6 @@ using namespace vex;
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
-  
+  Brain.Screen.clearScreen(white);
+  Brain.Screen.drawImageFromFile("loading.png", 175, 0);
 }
