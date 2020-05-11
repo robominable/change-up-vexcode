@@ -33,4 +33,7 @@ int main() {
   vexcodeInit();
   Brain.Screen.clearScreen(white);
   Brain.Screen.drawImageFromFile("loading.png", 175, 0);
+  vex::task::sleep(1000);
+  Brain.Screen.clearScreen(white);
+  Brain.Screen.drawImageFromFile("auton-select.png", 0, 0);
 }
