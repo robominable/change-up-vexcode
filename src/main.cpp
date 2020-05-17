@@ -11,7 +11,7 @@ void initialize() {
 }
 
 //MOTOR INITS
-const int LIFT_MOTOR_PORT = 2;
+const int LIFT_MOTOR_PORT = 6;
 
 ControllerButton btnUp(ControllerDigital::R1);
 ControllerButton btnDown(ControllerDigital::R2);
@@ -23,7 +23,7 @@ Motor lift(LIFT_MOTOR_PORT);
  * the robot is enabled, this task will exit.
  */
 void disabled() {}
- 
+
 /**
  * Runs after initialize(), and before autonomous when connected to the Field
  * Management System or the VEX Competition Switch. This is intended for
@@ -39,5 +39,17 @@ void competition_initialize() {}
 void autonomous() {}
 
 void opcontrol() {
+	while (true) {
+		if (btnUp.isPressed()) {
+			lift.moveVoltage(12000);
+		}
+		else if (btnDown.isPressed()) {
+			lift.moveVoltage(-12000);
+		}
+		else {
+			lift.moveVoltage(0);
+		}
 
+		pros::delay(10);
+	}
 }
