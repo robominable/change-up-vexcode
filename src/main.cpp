@@ -26,7 +26,7 @@ const int height2_LIFT2 = 4000;
 const int height3_LIFT2 = 6000;
 const int height4_LIFT2 = 8000;
 
-const int HEIGHTS_LIFT2[NUM_HEIGHTS_LIFT2] = {height1_LIFT2, height2_LIFT2, height3_LIFT2, height4_LIFT2};
+const int HEIGHTS_LIFT2[NUM_HEIGHTS_LIFT2] = {height1_LIFT2, height2_LIFT2, height3_LIFT2, height4_LIFT2}; 
 ControllerButton btnLIFT2up(ControllerDigital::L1);
 ControllerButton btnLIFT2down(ControllerDigital::L2);
 std::shared_ptr<AsyncPositionController<double, double>> liftControl =
